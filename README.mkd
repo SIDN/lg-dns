@@ -2,7 +2,7 @@
 
 Inspired by [the DNS looking glass
 implementation](http://www.bortzmeyer.org/dns-lg-usage.html), we decided to
-create a seperate code base and implement a looking glass in Go.
+create a seperate code base and implement a looking glass in Go and Java.
 
 ## DNS Looking Glasses
 
@@ -54,5 +54,4 @@ buffersize:
 
 ## This code
 
-This code is open source and licensed under the GPL version 2. The source repository can
-be [found at github.com](http://github.com/miekg/lg-dns).
+This code is open source and licensed under the GPL version 2.
