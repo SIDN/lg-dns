@@ -1,14 +1,148 @@
 <!DOCTYPE html>
-<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="pandoc">
-  <title></title>
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+<base href="http://dns-lg.sidnlabs.nl/" />
+<meta charset="UTF-8">
+<meta name='keywords' content='DNS, Looking Glass, SIDN Labs' />
+<meta name='description' content='A DNS Lookking Glass' />
+<meta name='robots' content='index,follow' />
+<!-- <meta name="viewport" content="width=device-width" /> -->
+<!-- <meta http-equiv="expires" content="0" /> -->
+<title>DNS Looking Glass by SIDN Labs</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="shortcut icon" href="//www.sidnlabs.nl/favicon.ico" />
+
+<style type="text/css">
+/*****************************
+ *
+ * SIDN Labs look & feel
+ *
+ *****************************/
+ 
+#header {
+	width:100%;
+	overflow:hidden;
+	position:relative;
+	background:url(//www.sidnlabs.nl/fileadmin/templates/sidnlabs/images/header.png) repeat-x 50% 0;
+	min-height:182px;
+	padding:8px 0 0;
+}
+#header .holder {
+	width:1003px;
+	margin:0 auto;
+}
+
+#header .holder:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.logo {
+	margin:0 0 0 -15px;
+	background:url(//www.sidnlabs.nl/fileadmin/templates/sidnlabs/images/logo.png) no-repeat;
+	width:310px;
+	height:192px;
+	text-indent:-9999px;
+	overflow:hidden;
+	float:left;
+}
+
+.logo a {
+	height:100%;
+	display:block;
+	cursor:pointer;
+}
+
+#wrapper {
+	width:100%;
+	overflow:hidden;
+	background:url(//www.sidnlabs.nl/fileadmin/templates/sidnlabs/images/pattern.jpg) repeat 41% 0;
+	margin-top:-82px;
+}
+.w1 {
+	margin:23px -191px;
+}
+.w2 {
+	background: url("//www.sidnlabs.nl/fileadmin/templates/sidnlabs/images/background.png") no-repeat scroll 50% 0 transparent;
+        position: relative;
+	width: 100%;
+}
+
+/**************************************************************************************************
+   Rest of style */
+
+h1, h2, h3, h4, h5, h6 {
+	color: #6C0B73;
+	
+}
+html {
+/*	overflow:-moz-scrollbars-vertical; */
+	overflow-y: scroll;
+	}
+body {
+	margin: 0;
+	background:#eee;
+	font-family:Arial, sans-serif;
+	line-height:16px;
+	text-shadow:0 1px 0 #fff;
+	/* font-size: 12px; */
+}
+a {
+	color:#333;
+	text-decoration:underline;
+}
+h1 {
+	display: block;
+	font-size: 2em;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
+h2  {
+	display: block;
+	font-size: 1.5em;
+	-webkit-margin-before: 0.83em;
+	-webkit-margin-after: 0.83em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
+#maintext {
+	font-size:13px;
+	margin:auto;
+	width:600px;;
+}
+#credits {
+	font-size:12px;
+	text-align:center;
+	margin:auto;
+	/* width:550px; */
+}
+</style>
+
 </head>
-<body>
+
+<!--  A tool brought to you by SIDN Labs ! -->
+
+<body lang='en'>
+
+    <div id="header">
+    <div class="holder">
+       <div class="logolink"><div class="logo"><a href="http://www.sidnlabs.nl"></a></div></div>
+       <div class="navigation"></div> <!-- navigation -->
+    </div>  <!-- holder -->
+    </div> <!-- header -->
+    <div id="wrapper">
+     <div class="w1"><!-- w1 begin -->
+      <div class="w2"><!-- w2 begin -->
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<div id="maintext">
 <h1 id="dns-looking-glass">DNS Looking Glass</h1>
 <p>Inspired by <a href="http://www.bortzmeyer.org/dns-lg-usage.html">the DNS looking glass implementation</a>, we decided to create a seperate code base and implement a looking glass in Go.</p>
 <h2 id="dns-looking-glasses">DNS Looking Glasses</h2>
@@ -50,5 +184,26 @@
 </dl>
 <h2 id="this-code">This code</h2>
 <p>This code is open source and licensed under the GPL version 2. The source repository can be <a href="http://github.com/miekg/lg-dns">found at github.com</a>.</p>
+</div>
+
+<div id="credits">
+<br />
+This is an experimental service made available by <a href="http://www.sidnlabs.nl/">SIDN Labs</a> (c) 2013. No warranty, no liability.<br />
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>        
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+</div>
+
+    </div> <!-- w2 -->
+    </div> <!-- w1 -->
+    </div> <!-- wrapper -->
+
 </body>
 </html>
