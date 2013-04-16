@@ -23,6 +23,7 @@ import com.google.common.net.InetAddresses;
 
 import nl.sidn.dnslib.logic.LookupResult;
 import nl.sidn.dnslib.logic.Resolver;
+import nl.sidn.dnslib.logic.ResolverContextBuilder;
 import nl.sidn.dnslib.message.Message;
 import nl.sidn.dnslib.message.util.NetworkData;
 import nl.sidn.dnslib.message.util.XMLTransformer;
@@ -64,21 +65,24 @@ public class LGResource {
 		if(type == null){
 			type = ResourceRecordType.A;
 		}
-		Resolver r = new Resolver();
+		
+		ResolverContextBuilder builder = new ResolverContextBuilder();
+		
+		
 		if(queryParams.containsKey("server")){	
-			r.setForwardingServer(queryParams.getFirst("server"));
+			builder.withForwardingServer(queryParams.getFirst("server"));
 		}
 		
 		if(queryParams.containsKey("buffersize")){	
-			r.setEdnsBufferSize(queryParams.getFirst("buffersize"));
+			builder.withEdnsBufferSize(queryParams.getFirst("buffersize"));
 		}
 		
 		if(queryParams.containsKey("dodnssec") && StringUtils.equals(queryParams.getFirst("dodnssec"), "1")){	
-			r.setDnsSecEnabled();
+			builder.withDnsSecEnabled();
 		}
 		
 		if(queryParams.containsKey("tcp") && StringUtils.equals(queryParams.getFirst("tcp"), "1")){	
-			r.setTCPEnabled();
+			builder.withTCPEnabled();
 		}
 		
 		if(queryParams.containsKey("reverse")){	
@@ -95,6 +99,8 @@ public class LGResource {
 				return Response.status(Status.BAD_REQUEST).build();
 			}
 		}
+		
+		Resolver r = new Resolver(builder.build());
 		
 		LookupResult result = r.lookup(qName, type, ResourceRecordClass.IN, true);
 		

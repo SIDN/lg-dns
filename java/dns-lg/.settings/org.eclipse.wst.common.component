@@ -4,7 +4,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <dependent-module archiveName="dnslib.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/dnslib/dnslib">
+        <dependent-module archiveName="sidn-dnslib.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/dnslib/dist/sidn-dnslib.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="dns-lg"/>

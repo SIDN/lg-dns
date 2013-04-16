@@ -3,7 +3,6 @@
 	<name>dns-lg</name>
 	<comment></comment>
 	<projects>
-		<project>dnslib</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
