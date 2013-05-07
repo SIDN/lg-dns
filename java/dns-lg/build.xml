@@ -6,7 +6,7 @@
 		<ivy:retrieve conf="webinf" pattern="WebContent/WEB-INF/lib/[artifact].[ext]" />
 	</target>
 
-	<target name="init" depends="bootstrap">
+	<target name="init" depends="bootstrap, retrieve">
 		<mkdir dir="build/classes" />
 		<mkdir dir="dist" />
 	</target>
