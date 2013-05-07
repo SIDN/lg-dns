@@ -41,9 +41,8 @@
        <dependency org="com.sun.jersey" name="jersey-server" rev="1.17" transitive="false" conf="webinf->default"/>
        <dependency org="com.sun.jersey" name="jersey-servlet" rev="1.17" transitive="false" conf="webinf->default"/>
        <dependency org="com.sun.jersey" name="jersey-core" rev="1.17"  transitive="false" conf="webinf->default"/>
-   <!--          
-     <dependency org="org.jboss.weld" name="weld-api" rev="1.1.Final" force="true" conf="compiletime->default"/>
-       -->      
+		<dependency org="com.google.guava" name="guava" rev="14.0.1" conf="webinf->default"/>
+              
             
 	</dependencies>
 </ivy-module>
