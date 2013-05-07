@@ -12,8 +12,8 @@
 	</target>
 
 	<path id="lib.path.id">
-		<fileset dir="lib/">
-			<include name="*.jar" />
+		<fileset dir="WebContent/WEB-INF/lib/">
+			<include name="**/*.jar" />
 		</fileset>
 	</path>
 
